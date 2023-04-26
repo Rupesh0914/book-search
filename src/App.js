@@ -53,7 +53,7 @@ function App() {
 
 	const fetchBookResult = () => {
 		setLoading(true);
-		fetch(`http://openlibrary.org/search.json?q=${searchTerm}`)
+		fetch(`https://openlibrary.org/search.json?q=${searchTerm}`)
 			.then((res) => res.json())
 			.then((data) => {
 				const books =
