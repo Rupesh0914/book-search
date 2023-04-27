@@ -54,6 +54,7 @@ function App() {
 	const fetchBookResult = () => {
 		setLoading(true);
 		fetch(`https://openlibrary.org/search.json?q=${searchTerm}`)
+		// the api provided have http but if we have https it will be more secure and have more security and privacy of data transmitted.
 			.then((res) => res.json())
 			.then((data) => {
 				const books =
